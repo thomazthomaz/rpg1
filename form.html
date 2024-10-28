@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: black; /* Fundo preto */
+            color: #FFFFFF; /* Texto branco */
+            font-family: 'Rockwell', serif; /* Fonte Rockwell */
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove preenchimento padrão */
+            display: flex; /* Usando flexbox para centralizar */
+            flex-direction: column; /* Alinha elementos verticalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+            height: 100vh; /* Altura total da tela */
+        }
+        h2 {
+            margin-bottom: 20px; /* Espaçamento abaixo do título */
+        }
+        label {
+            display: block; /* Exibe o label como bloco */
+            margin: 10px 0; /* Margem acima e abaixo do label */
+        }
+        input {
+            padding: 10px; /* Preenchimento no campo de texto */
+            border: none; /* Remove borda padrão */
+            border-radius: 5px; /* Bordas arredondadas */
+            width: 200px; /* Largura do campo de texto */
+            background-color: #333; /* Fundo do campo de texto */
+            color: #FFFFFF; /* Texto branco */
+        }
+    </style>
+</head>
+<body>
+    <h2>Preencha suas informações</h2>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" placeholder="Digite sua idade">
+</body>
+</html>
