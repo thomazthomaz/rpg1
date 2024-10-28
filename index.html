@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        body {
+            background-color: black; /* Fundo preto */
+            color: #FFFFFF; /* Texto branco */
+            font-family: 'Rockwell', serif; /* Fonte Rockwell */
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove preenchimento padrão */
+            display: flex; /* Usando flexbox para centralizar */
+            flex-direction: column; /* Alinha elementos verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Altura total da tela */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333; /* Cabeçalho em um cinza escuro */
+            border-radius: 5px; /* Bordas arredondadas */
+            margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+        }
+        .rectangle {
+            width: 200px; /* Largura do retângulo */
+            height: 50px; /* Altura do retângulo */
+            background-color: #FFFFFF; /* Cor do retângulo */
+            display: flex; /* Usando flexbox para centralizar texto */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            color: black; /* Texto preto */
+            font-family: 'Rockwell', serif; /* Fonte Rockwell */
+            cursor: pointer; /* Cursor de mão ao passar o mouse */
+            border-radius: 5px; /* Bordas arredondadas */
+            transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+        }
+        .rectangle:hover {
+            background-color: #ccc; /* Muda a cor ao passar o mouse */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333; /* Rodapé em um cinza escuro */
+            position: relative; /* Posiciona relativo ao fluxo normal */
+            bottom: 0; /* Fixa na parte inferior */
+            width: 100%; /* Largura total */
+        }
+        @media (max-width: 600px) { /* Responsividade para telas menores */
+            body {
+                font-size: 14px; /* Tamanho da fonte menor para celulares */
+            }
+            header, footer {
+                padding: 10px; /* Menos preenchimento em dispositivos móveis */
+            }
+            .rectangle {
+                width: 150px; /* Ajusta a largura do retângulo em dispositivos móveis */
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Rockwell&display=swap" rel="stylesheet"> <!-- Link para a fonte Rockwell -->
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à sua ficha</h1> <!-- Texto principal -->
+    </header>
+    <div class="rectangle" onclick="window.location.href='form.html'">Inicia</div> <!-- Retângulo que redireciona para a nova página -->
+    <footer>
+        <p>&copy; 2024 Meu Nome</p>
+    </footer>
+</body>
+</html>
